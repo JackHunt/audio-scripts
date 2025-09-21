@@ -65,6 +65,9 @@ function update_settings() {
 
   maybe_backup $file
 
+  MAC_PATH_1="Macintosh HD:Users:jackhunt:Documents:Native Instruments:"
+  MAC_PATH_2="Macintosh HD:Users:jackhunt:Library:Mobile Documents:com~apple~CloudDocs:"
+
   if [[ $target == "win" ]]; then
     ""
   elif [[ $target == "mac" ]]; then
@@ -86,4 +89,4 @@ fi
 
 update_library "test/collection.nml" $target
 
-update_settings "test/traktor_settings.tsi" $target
+update_settings "test/Traktor Settings.tsi" $target
