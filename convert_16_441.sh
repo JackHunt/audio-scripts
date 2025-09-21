@@ -31,7 +31,7 @@ while getopts "mo" opt; do
   esac
 done
 
-process_directory() {
+function process_directory() {
   INPUT_DIR="$1"
   OUTPUT_DIR="$INPUT_DIR/converted"
 
